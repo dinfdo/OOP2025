@@ -36,14 +36,14 @@ float convert2float(char v[]) {
 }
 
 int main() {
-    char buffer[101];
+    char b[101];
     float totalSum = 0.0f;
     FILE* file;
 
     file = fopen("in.txt", "r");
-    while (fgets(buffer, 101, file) != NULL) {
-        totalSum += convert2float(buffer);
-        strcpy(buffer, "");
+    while (fgets(b, 101, file) != NULL) {
+        totalSum += convert2float(b);
+        strcpy(b, "");
     }
     fclose(file);
     printf("Sum is: %0.0f", totalSum);
