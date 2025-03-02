@@ -2,7 +2,7 @@
 #include <cstring>
 using namespace std;
 
-void Words(char str[]){
+void cuv(char str[]){
     char v[101][101];
 
     char *p=strtok(str," ");
@@ -41,7 +41,7 @@ int main(){
     openFile = fopen("in.txt", "r");
 
     if(fgets (str, 101, openFile) != NULL)
-        Words(str);   
+        cuv(str);   
 
     fclose(openFile);
     return 0;
