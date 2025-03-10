@@ -17,17 +17,17 @@ void cuv(char str[]){
         for(int j=k+1; j<=i; j++)
             if(strlen(v[k])<strlen(v[j])){
                 strcpy(aux,v[j]);
-				strcpy(v[j],v[k]);
-				strcpy(v[k],aux);
-			}
+		strcpy(v[j],v[k]);
+		strcpy(v[k],aux);
+		}
 			
     for(int k=1;k<i;k++)
         for(int j=k+1;j<=i;j++)
             if(strlen(v[k])==strlen(v[j])&&strcmp(v[k], v[j])>0){
                 strcpy(aux,v[j]);
-				strcpy(v[j],v[k]);
-				strcpy(v[k],aux);
-			}
+		strcpy(v[j],v[k]);
+		strcpy(v[k],aux);
+		}
                               
     for(int r=1; r<=i; r++)
         printf("%s\n",v[r]);
